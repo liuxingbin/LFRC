@@ -101,11 +101,6 @@ def evaluate_pgd(test_loader, model, attack_iters, restarts, eps=8, step=2, use_
             pgd_delta = attack_pgd(model, X, y, epsilon, alpha, attack_iters,
                                    restarts, use_CWloss=use_CWloss, random_init=random_init)
 
-        noise_x = normalize(X + pgd_delta)
-        for index in range(20):
-            torchvision.utils.save_image(
-                noise_x[index], '../{}.png'.format(index))
-
         with torch.no_grad():
             output = model(normalize(X + pgd_delta))
             loss = F.cross_entropy(output, y)
