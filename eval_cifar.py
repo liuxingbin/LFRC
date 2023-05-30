@@ -88,6 +88,8 @@ def main():
     model_test.float()
     model_test.eval()
 
+    black_model = None
+    
     ## Evaluate clean acc ###
     _, test_acc, clean_list = evaluate_standard(test_loader, model_test)
     print('Clean acc: ', test_acc)
