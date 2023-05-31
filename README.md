@@ -23,7 +23,7 @@ The similarity matrix of natural examples is more **compact** than adversarial e
 
 
 ## Results
-The white-box robustness of **LFRC** with ResNet-18 on CIFAR-10 and CIFAR-100 datasets is shown below. Please refer to our paper for more details. The models' weight and train-logs can be found in [here](https://drive.google.com/drive/folders/1Zy0ua0nTp8s-xjS93tzUYeQ_qgDk54Rz?usp=sharing).
+The white-box robustness of **LFRC** with ResNet-18 on CIFAR-10 and CIFAR-100 datasets is shown below. Please refer to our paper for more details. The models' weight and train-logs can be found in [here](https://drive.google.com/drive/folders/1WPPWnWOP5f_yaGusXf7kMlXxqmGgt6WK?usp=sharing).
 
 <p align="center">
   <img src=".github/result.png" width = "90%">
